@@ -3,40 +3,41 @@
 <head>
   <title>Stanford Parser</title>
   <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-  <link rel="stylesheet" href="screen.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
   <script src="app.js" type="text/javascript"></script>
 </head>
 <body>
-  <h1><a href="index.html">Blog</a></h1>
-  <article>
-    <h2>Stanford Parser</h2>
-    <section>
-      <h3>Setup</h3>
-      <ol>
-        <li>
-          <h4>Install the parser</h4>
-          <pre>brew install stanford-parser</pre>
-        </li>
-        <li>
-          <h4>Take the parsers out of the Cellar</h4>
-          <pre>mkdir -p /usr/local/libexec
+  <div class="container">
+    <h1><a href="index.html">Blog</a></h1>
+    <article>
+      <h2>Stanford Parser</h2>
+      <section>
+        <h3>Setup</h3>
+        <ol>
+          <li>
+            <h4>Install the parser</h4>
+            <pre>brew install stanford-parser</pre>
+          </li>
+          <li>
+            <h4>Take the parsers out of the Cellar</h4>
+            <pre>mkdir -p /usr/local/libexec
 ln -s /usr/local/Cellar/stanford-parser/1.6.2/libexec /usr/local/libexec/stanford-parser</pre>
-        </li>
-        <li>
-          <h4>Try it out in the GUI</h4>
-          <pre>lexparser-gui.csh</pre>
-          <p>Hint: You can find the English parser here: <kbd>/usr/local/libexec/stanford-parser/englishPCFG.ser.gz</kbd></p>
-      </ol>
-    </section>
-    <section>
-      <h3>Links</h2>
-      <ul>
-        <li>
-          <h4><a href="http://aclweb.org/anthology-new/J/J93/J93-2004.pdf">Building a Large Annotated Corpus of English: The Penn Treebank</a></h4>
-          <p>Contains a table of the POS tag definitions.</p>
-      </ul>
-    </section>
-  </article>
+          </li>
+          <li>
+            <h4>Try it out in the GUI</h4>
+            <pre>lexparser-gui.csh</pre>
+            <p>Hint: You can find the English parser here: <kbd>/usr/local/libexec/stanford-parser/englishPCFG.ser.gz</kbd></p>
+        </ol>
+      </section>
+      <section>
+        <h3>Links</h2>
+        <ul>
+          <li>
+            <h4><a href="http://aclweb.org/anthology-new/J/J93/J93-2004.pdf">Building a Large Annotated Corpus of English: The Penn Treebank</a></h4>
+            <p>Contains a table of the POS tag definitions.</p>
+        </ul>
+      </section>
+    </article>
+  </div>
 </body>
 </html>
